@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding:0;
+    background: $lightColor;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.btn {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+.btn-primary {background: $primaryColor;}
+.btn-secondary {background: $secondaryColor;}
+.btn-light {background: $lightColor;}
+.btn-dark {background: $darkColor;}
+ 
+.category {
+    padding: 6px 10px;
+    border-radius: 10px;
+    color:#fff;
+    text-align: center;
+    display: inline-block;
+}
+
+.category-sports {background: $secondaryColor;}
+.category-tech {background: steelblue;}
+.category-ent {background: violet;}
+
+.card {
+    background: #fff;
+    padding: 1.5rem;
+}
+
+.p-1 {padding: 0.5rem;}
+.p-2 {padding: 1rem;}
+.p-3 {padding: 2rem;}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.current {
+    background: $primaryColor;
+    color: #fff;
+    padding: 0.5rem 1rem;
+}
+
+
+ul.list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed darken( #999, 4);
+}
