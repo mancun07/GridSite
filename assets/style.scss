@@ -1,6 +1,6 @@
 @import 'variables';
 @import 'utilities';
-@import 'media';
+
 
 nav#main-nav {
 
@@ -135,10 +135,49 @@ footer#main-footer {
             color: darken(#999, 4);
             background: lighten($darkColor, 3);
 
-            p {
-                
-            }
         }
     }
 }
 
+
+// About page
+
+section#about {
+
+    .about-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3rem;
+
+        > *:first-child {
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 3;
+        }
+    }
+}
+
+// Article Page
+section#article {
+
+    .details-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2rem;
+
+        > *:first-child {
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 4;
+        }
+    }
+
+    .author {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: $lightColor;
+    }
+
+} 
+
+
+@import 'media';

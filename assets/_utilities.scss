@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+// @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
+    // font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin:0;
     padding:0;
     background: $lightColor;
@@ -36,6 +37,10 @@ p {
     text-align: center;
 }
 
+.btn-block {
+    display: block;
+}
+
 .btn-primary {background: $primaryColor;}
 .btn-secondary {background: $secondaryColor;}
 .btn-light {background: $lightColor;}
@@ -55,12 +60,30 @@ p {
 
 .card {
     background: #fff;
-    padding: 1.5rem;
+    padding: 1rem;
+}
+
+.bg-primary {
+    background: $primaryColor;
+    color: #fff;
+}
+
+.bg-secondary {
+    background: $secondaryColor;
+    color: #fff;
 }
 
 .p-1 {padding: 0.5rem;}
 .p-2 {padding: 1rem;}
 .p-3 {padding: 2rem;}
+.p-4 {padding: 3rem;}
+.p-5 {padding: 4rem;}
+
+.py-1 {padding: 0.5rem 0;}
+.py-2 {padding: 1rem 0;}
+.py-3 {padding: 2rem 0;}
+.py-4 {padding: 3rem 0;}
+.py-5 {padding: 4rem 0;}
 
 .container {
     max-width: 980px;
